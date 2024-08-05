@@ -32,7 +32,7 @@ export const CreditInfo = () => {
       setIsOpenModal(true);
       localStorage.removeItem("userInfo");
     } catch (e) {
-      console.log(e);
+      console.error(e);
     } finally {
       setIsSubmitting(false);
     }
